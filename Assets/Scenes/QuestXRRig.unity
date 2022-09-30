@@ -8790,6 +8790,56 @@ MonoBehaviour:
     IKTarget: {fileID: 1111464306}
     trackingPositionOffset: {x: -0.01, y: -0.01, z: 0.01}
     trackingRotationOffset: {x: 90, y: -180, z: -90}
+  leftFingerIndex:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  leftFingerMiddle:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  leftFingerRing:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  leftFingerPinky:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  leftFingerThumb:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  rightFingerIndex:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  rightFingerMiddle:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  rightFingerRing:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  rightFingerPinky:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
+  rightFingerThumb:
+    vrTarget: {fileID: 0}
+    IKTarget: {fileID: 0}
+    trackingPositionOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
   turnSmoothness: 5
   IKHead: {fileID: 368452631}
   headBodyOffset: {x: 0, y: -1.65, z: 0}
