@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Oculus/Interaction/Samples/Scenes/Features/HandGrab.unity
     guid: 1ca1035b12c67f24d81e7bc5ad627d76
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuestXRRigHands.unity
     guid: a7be87d93a502914c823f9ab9e7b933a
+  - enabled: 1
+    path: Assets/Scenes/QuestXRRigHandsNetworked.unity
+    guid: 94e40bd5f8a722043a220e3fdf017e5a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 35817673aeedfd1499e055e57eaa9e00, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 130cd8e4271172642bd00f5fb61a68c8, type: 2}
