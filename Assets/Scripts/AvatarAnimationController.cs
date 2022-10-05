@@ -27,7 +27,7 @@ public class AvatarAnimationController : MonoBehaviour {
     private void Update() {
         currentPosition = gameObject.transform.position;
         float howFar = currentPosition.FlatDistanceTo(pastPosition);
-        Debug.Log($"Far {howFar}");
+        //Debug.Log($"Far {howFar}");
 
         diff = Vector3.Distance(currentPosition, pastPosition);// Mathf.Abs(currentPosition.z - pastPosition.z); //Vector3.Distance(currentPosition, pastPosition);
         if (diff > mvmtThreshold) {
@@ -35,7 +35,7 @@ public class AvatarAnimationController : MonoBehaviour {
         } else {
             StopAnimation6DOFMotion();
         }
-        Debug.Log($"Diff {diff}");
+        //Debug.Log($"Diff {diff}");
     }
 
     public void SavePastPosition() {
