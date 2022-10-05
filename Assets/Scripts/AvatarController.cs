@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -16,6 +17,7 @@ public class MapTransform
 }
 public class AvatarController : MonoBehaviour
 {
+    public List<MapTransform> avatarJoints;
     [SerializeField] private MapTransform head;
     [SerializeField] private MapTransform leftHand;
     [SerializeField] private MapTransform rightHand;
@@ -35,6 +37,34 @@ public class AvatarController : MonoBehaviour
     [SerializeField] private Transform IKHead;
 
     [SerializeField] private Vector3 headBodyOffset;
+
+    private void Awake() {
+        if (avatarJoints.Count == 0) {
+            avatarJoints = new List<MapTransform>();
+            avatarJoints.Add(head);
+            avatarJoints.Add(leftHand);
+            avatarJoints.Add(rightHand);
+            avatarJoints.Add(leftFingerIndex);
+            avatarJoints.Add(leftFingerMiddle);
+            avatarJoints.Add(leftFingerRing);
+            avatarJoints.Add(leftFingerPinky);
+            avatarJoints.Add(leftFingerThumb);
+            avatarJoints.Add(rightFingerIndex);
+            avatarJoints.Add(rightFingerMiddle);
+            avatarJoints.Add(rightFingerRing);
+            avatarJoints.Add(rightFingerPinky);
+            avatarJoints.Add(rightFingerThumb);
+        }
+
+    }
+
+    public void AssignMappings(List<GameObject> sourceIKMapping) {
+        Debug.Assert(sourceIKMapping.Count == avatarJoints.Count);
+        for (int i=0; i<avatarJoints.Count; i++) {
+            avatarJoints[i].vrTarget = sourceIKMapping[i].transform;
+        }
+    }
+        
 
     void LateUpdate()
     {
