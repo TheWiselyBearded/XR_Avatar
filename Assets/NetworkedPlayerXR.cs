@@ -13,7 +13,7 @@ public class NetworkedPlayerXR : NetworkBehaviour
         if (IsOwner) {
             SendTargetToServerRPC(transform.position);
         }
-        if (IsHost || IsServer || IsClient) {
+        if (IsHost || IsServer) {
             transform.position = m_TargetServerOnly;
         }
     }
