@@ -2713,7 +2713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6143289005351923058}
   m_Layer: 0
-  m_Name: XR_Player
+  m_Name: XR Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

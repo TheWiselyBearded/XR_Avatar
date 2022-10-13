@@ -4725,7 +4725,7 @@ GameObject:
   - component: {fileID: 4835295157995929426}
   - component: {fileID: 7806394816281155921}
   m_Layer: 0
-  m_Name: Network Avatar
+  m_Name: Network XR Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

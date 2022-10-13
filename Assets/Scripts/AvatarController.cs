@@ -9,6 +9,10 @@ public class MapTransform
     public Vector3 trackingPositionOffset;
     public Vector3 trackingRotationOffset;
 
+    /// <summary>
+    /// Transform VR target joint position from local rig space to Unity world space
+    /// Applies delta rotational movement with pre-defined offseting from origin
+    /// </summary>
     public void MapVRAvatar()
     {
         IKTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
@@ -58,6 +62,11 @@ public class AvatarController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Invoked from the Local Player Avatars network event listener,
+    /// This method updates the VR target positions for the IK Mapping.
+    /// </summary>
+    /// <param name="sourceIKMapping"></param>
     public void AssignMappings(List<GameObject> sourceIKMapping) {
         Debug.Assert(sourceIKMapping.Count == avatarJoints.Count);
         for (int i=0; i<avatarJoints.Count; i++) {
@@ -66,23 +75,29 @@ public class AvatarController : MonoBehaviour
     }
         
 
+    /// <summary>
+    /// Updates torso positioning and body position (driven by head movement) and
+    /// updates all hand and arm joints
+    /// </summary>
     void LateUpdate()
     {
         transform.position = IKHead.position + headBodyOffset;
-        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(IKHead.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness); ;
-        head.MapVRAvatar();
-        leftHand.MapVRAvatar();
-        rightHand.MapVRAvatar();
-        leftFingerIndex.MapVRAvatar();
-        leftFingerMiddle.MapVRAvatar();
-        leftFingerRing.MapVRAvatar();
-        leftFingerPinky.MapVRAvatar();
-        leftFingerThumb.MapVRAvatar();
+        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(IKHead.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+        if (head != null || leftHand != null || rightHand != null) {
+            head.MapVRAvatar();
+            leftHand.MapVRAvatar();
+            rightHand.MapVRAvatar();
+            leftFingerIndex.MapVRAvatar();
+            leftFingerMiddle.MapVRAvatar();
+            leftFingerRing.MapVRAvatar();
+            leftFingerPinky.MapVRAvatar();
+            leftFingerThumb.MapVRAvatar();
 
-        rightFingerIndex.MapVRAvatar();
-        rightFingerMiddle.MapVRAvatar();
-        rightFingerRing.MapVRAvatar();
-        rightFingerPinky.MapVRAvatar();
-        rightFingerThumb.MapVRAvatar();
+            rightFingerIndex.MapVRAvatar();
+            rightFingerMiddle.MapVRAvatar();
+            rightFingerRing.MapVRAvatar();
+            rightFingerPinky.MapVRAvatar();
+            rightFingerThumb.MapVRAvatar();
+        }
     }
 }
