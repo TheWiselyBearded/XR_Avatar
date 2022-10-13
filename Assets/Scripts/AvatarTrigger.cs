@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// A simple class to detect avatar hand collisions in a button-like manner
+/// and invoke Unity Events 
+/// </summary>
 public class AvatarTrigger : MonoBehaviour
 {
     [SerializeField] public Button ButtonEvent;

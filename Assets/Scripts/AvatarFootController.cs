@@ -13,6 +13,10 @@ public class AvatarFootController : MonoBehaviour {
     [SerializeField] private Vector3 raycastOffsetLeft;
     [SerializeField] private Vector3 raycastOffsRight;
 
+    /// <summary>
+    /// To Animator Rigs IK position based on whether the foot collides against a specified layer.
+    /// </summary>
+    /// <param name="layerIndex"></param>
     private void OnAnimatorIK(int layerIndex) {
         Vector3 leftFootPos = this.animator.GetIKPosition(AvatarIKGoal.LeftFoot);
         Vector3 rightFootPos = this.animator.GetIKPosition(AvatarIKGoal.RightFoot);

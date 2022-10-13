@@ -1,16 +1,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// This class switches animator states based on input navigation controls from the player.
+/// In the case the user isn't using a controller, it calculates the difference in head movement between frames
+/// against a threshold value as a means of determining whethher the player is moving.
+/// 
+/// The animator is masked from the torso up, so only the player's feet are controlled with this animator.
+/// </summary>
 public class AvatarAnimationController : MonoBehaviour {
     [SerializeField] private InputActionReference move;
 
     [SerializeField] private Animator animator;    
 
     public float mvmtThreshold;
-    private Rigidbody rb;
     private Vector3 pastPosition, currentPosition;
     private void Start() {
-        //rb = GetComponent<Rigidbody>();
         if (mvmtThreshold == 0.0f) mvmtThreshold = 0.02f;
     }
 
