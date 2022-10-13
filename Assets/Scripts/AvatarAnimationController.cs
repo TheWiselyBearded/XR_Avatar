@@ -15,7 +15,7 @@ public class AvatarAnimationController : MonoBehaviour {
     }
 
     private void AnimateLegs6DOFMotion() {
-        this.animator.SetBool("isMoving", true);
+        this.animator.SetBool("isMoving", true  );
         this.animator.SetFloat("animSpeed", 2.0f);
     }
 
@@ -35,7 +35,8 @@ public class AvatarAnimationController : MonoBehaviour {
         } else {
             StopAnimation6DOFMotion();
         }
-        //Debug.Log($"Diff {diff}");
+        //Debug.Log($"Diff {diff} for {gameObject.name}");
+        pastPosition = gameObject.transform.position;
     }
 
     public void SavePastPosition() {
@@ -48,7 +49,7 @@ public class AvatarAnimationController : MonoBehaviour {
         
         // check diff, 
         //float zVel = transform.InverseTransformDirection(GetComponent<Rigidbody>().velocity).z;
-        pastPosition = gameObject.transform.position;
+        //pastPosition = gameObject.transform.position;
     }
     private void OnEnable() {
         if (move == null) return;
