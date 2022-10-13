@@ -1,13 +1,14 @@
 # XR_Avatar
 This sample Unity project provides a networked IK-rigged avatar for the  Oculus Quest. With this solution, developers can freely create multiplayer games with an IK Rig and Hand Tracking. The system works by synchronizing the joint positions of an IK rig with a local player’s VR Rig over a network session. This system depends on a skeletal avatar (e.g., Ready Player Me), the Unity Animation Rigging package, the Unity NetCode for GameObjects package, and the Oculus Quest Integration SDK.
 
-Technical runtime details
+## Install:
+
+### Technical runtime details
 The system runtime begins with a pre-defined mapping between an IK rig and VR rig. The script of interest here is the AvatarMapping. In short, this script translates the local coordinates of the VR rig into the local coordinates of the IK Rig.
 
 Upon connecting to the network (e.g., as host or client), the Local Player Rig is then mapped to the network-instantiated player prefab. If the network-instantiated player prefab is not owned locally (i.e., another player), all the AvatarRigging components are disabled/destroyed. The Animation Rigging components for a remote player instance remain active because the ClientNetworkTransform components communicate and synchronize a client’s VR Rig joint positions. 
-## Install:
 
-## Avatar Rig Details
+### Avatar Rig Details
 To use the XR Avatar prefab without networking, simply navigate into the Prefabs folder and use the XR Player prefab. To edit the network player prefab, open the XR Networked Avatar prefab. For a thorough breakdown of the avatar scripts, please check out these awesome YouTube tutorials provided by ____. 
 
 For the feet, the system simply checks if the user’s head has moved past a threshold distance value and invokes a walking animation via the Avatar’s animator. If the user’s head movement doesn’t exceed the threshold, the Avatar’s animator switches to/remains in the idle animation state. The rigging of the feet is an area of improvement.
