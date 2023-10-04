@@ -58,7 +58,7 @@ public class FingerIK : MonoBehaviour {
 
     public void PositionFingers() {
         UpdateHand(RH, RHS);
-        //UpdateHand(LH, LHS);
+        UpdateHand(LH, LHS);
     }
 
     private void LateUpdate() {

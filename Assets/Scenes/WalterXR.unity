@@ -26059,9 +26059,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skeletonType: 0
   _updateRootPose: 0
-  _updateRootScale: 1
+  _updateRootScale: 0
   _enablePhysicsCapsules: 0
-  _applyBoneTranslations: 1
+  _applyBoneTranslations: 0
   _customBones_V2:
   - {fileID: 6147815877609364715}
   - {fileID: 6147736618255303505}
@@ -27407,7 +27407,7 @@ MonoBehaviour:
     m_Mid: {fileID: 390376240}
     m_Tip: {fileID: 390376239}
     m_Target: {fileID: 6143289005321285994}
-    m_Hint: {fileID: 0}
+    m_Hint: {fileID: 6143289006263117136}
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
     m_HintWeight: 1
@@ -27556,71 +27556,71 @@ MonoBehaviour:
       transform: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
     Hand_Thumb1:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376238}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Thumb2:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376237}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Thumb3:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376221}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Index1:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376225}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Index2:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376224}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Index3:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376223}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Middle1:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376229}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Middle2:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376228}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Middle3:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376227}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Ring1:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376235}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Ring2:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376234}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Ring3:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376219}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Pinky0:
       transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      offset: {x: 90, y: 0, z: -90}
     Hand_Pinky1:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376233}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Pinky2:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376232}
+      offset: {x: -90, y: 0, z: 90}
     Hand_Pinky3:
-      transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      transform: {fileID: 390376231}
+      offset: {x: -90, y: 0, z: 90}
     Hand_MaxSkinnable:
       transform: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
     Hand_ThumbTip:
       transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      offset: {x: 90, y: 0, z: -90}
     Hand_IndexTip:
       transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      offset: {x: 90, y: 0, z: -90}
     Hand_MiddleTip:
       transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      offset: {x: 90, y: 0, z: -90}
     Hand_RingTip:
       transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      offset: {x: 90, y: 0, z: -90}
     Hand_PinkyTip:
       transform: {fileID: 0}
-      offset: {x: 0, y: 0, z: 0}
+      offset: {x: 90, y: 0, z: -90}
     Hand_End:
       transform: {fileID: 0}
       offset: {x: 0, y: 0, z: 0}
@@ -28063,23 +28063,23 @@ MonoBehaviour:
     trackingPositionOffset: {x: -0.01, y: -0.01, z: 0.01}
     trackingRotationOffset: {x: 90, y: -180, z: -90}
   - vrTarget: {fileID: 6147778012341728729}
-    IKTarget: {fileID: 6143289004960672452}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 90, z: 0}
   - vrTarget: {fileID: 6147953216948913573}
-    IKTarget: {fileID: 6143289005154767797}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 90, z: 0}
   - vrTarget: {fileID: 6146850784677079075}
-    IKTarget: {fileID: 6143289006177470773}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   - vrTarget: {fileID: 6147333602066311791}
-    IKTarget: {fileID: 6143289006125486978}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   - vrTarget: {fileID: 6147830634716652089}
-    IKTarget: {fileID: 6143289004708171825}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   - vrTarget: {fileID: 6147683884525246492}
@@ -28119,27 +28119,27 @@ MonoBehaviour:
     trackingRotationOffset: {x: 90, y: -180, z: -90}
   leftFingerIndex:
     vrTarget: {fileID: 6147778012341728729}
-    IKTarget: {fileID: 6143289004960672452}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 90, z: 0}
   leftFingerMiddle:
     vrTarget: {fileID: 6147953216948913573}
-    IKTarget: {fileID: 6143289005154767797}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftFingerRing:
     vrTarget: {fileID: 6146850784677079075}
-    IKTarget: {fileID: 6143289006177470773}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftFingerPinky:
     vrTarget: {fileID: 6147333602066311791}
-    IKTarget: {fileID: 6143289006125486978}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftFingerThumb:
     vrTarget: {fileID: 6147830634716652089}
-    IKTarget: {fileID: 6143289004708171825}
+    IKTarget: {fileID: 0}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   rightFingerIndex:
