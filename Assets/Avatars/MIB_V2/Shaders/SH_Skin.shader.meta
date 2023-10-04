@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 4a599da76dc9e434fa0b572e58fade4e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Normal: {fileID: 2800000, guid: 4d1826a7423d66f45b50922ece0636a1, type: 3}
+  - _Diffuse: {fileID: 2800000, guid: 9b7246f192280e54abf041fc18518879, type: 3}
+  - _TranslucenceGloss: {fileID: 2800000, guid: 9762660dcf18e854f8bff57d61136095,
+      type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

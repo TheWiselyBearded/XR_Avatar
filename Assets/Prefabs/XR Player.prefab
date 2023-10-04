@@ -4732,7 +4732,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6143289006158902335
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4749,7 +4749,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6143289006158902334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4892,6 +4893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 659e70753b3b60645af5aa0cf4ef2f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  avatarJoints: []
   head:
     vrTarget: {fileID: 499833738641235864}
     IKTarget: {fileID: 6143289004451043685}

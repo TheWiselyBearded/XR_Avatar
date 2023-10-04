@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: a01a499f532354248894930ca3bd3244
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Detail_Add: {fileID: 2800000, guid: a8c9eed3b969c164584be6f59c4bd1a9, type: 3}
+  - _NOMA: {fileID: 2800000, guid: cad2625b553eee84aaa22c18ccb3f7ed, type: 3}
+  - _DIFF_MET_SMO: {fileID: 2800000, guid: 597a3624635ca6a448435e79c5675c5d, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

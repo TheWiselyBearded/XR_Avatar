@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2095831504609713654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1015015064273142, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_Name
+      value: PFB_MIB_Androgyne_03_NPC Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869206423605804, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460842748897384, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.08979357
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460842748897384, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.17574827
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873898809729036, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95967682652855696, guid: 5c226a22566db7144a538a855f272afb,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 5c0dbd72a8082204cab969f1f2d4f875, type: 3}
+    - target: {fileID: 95967682652855696, guid: 5c226a22566db7144a538a855f272afb,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1bdd67c5a6436d74faec52dca8d1825d, type: 2}
+    - target: {fileID: 114432790602663576, guid: 5c226a22566db7144a538a855f272afb,
+        type: 3}
+      propertyPath: AvatarAnimator
+      value: 
+      objectReference: {fileID: 2035928020315095142}
+    m_RemovedComponents:
+    - {fileID: 114355190554082576, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+    - {fileID: 114409911366656578, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+    - {fileID: 114013704274735108, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+    - {fileID: 114762427671917244, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5c226a22566db7144a538a855f272afb, type: 3}
+--- !u!95 &2035928020315095142 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95967682652855696, guid: 5c226a22566db7144a538a855f272afb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2095831504609713654}
+  m_PrefabAsset: {fileID: 0}
